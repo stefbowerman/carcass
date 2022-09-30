@@ -1,0 +1,45 @@
+/* Color */
+
+$black:       #000;
+$grey:        #999;
+$white:       #FFF;
+
+$body-bg:    $black;
+$color-text: $white;
+
+/* Typography */
+$font-family-base: Arial, sans-serif;
+
+$font-weight-thin:        100;
+$font-weight-extra-light: 200;
+$font-weight-light:       300;
+$font-weight-normal:      400;
+$font-weight-medium:      500;
+$font-weight-semi-bold:   600;
+$font-weight-bold:        700;
+$font-weight-extra-bold:  800;
+$font-weight-black:       900;
+
+$line-height-base: 1.6;
+$font-size-base: 1rem;
+$letter-spacing-base: -0.01em;
+
+/* Sizing */
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px,
+  xxl: 1480px,
+  xxxl: 1920px
+);
+
+// Forms
+$label-margin-bottom: 7px;
+$label-color: $grey;
+$form-group-spacing: 1.4rem;
+
+// Misc
+$cursor-disabled: not-allowed;

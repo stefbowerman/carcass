@@ -1,0 +1,44 @@
+.btn {
+  // Button reset stuff
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  white-space: nowrap;
+  user-select: none;
+  text-align: center;
+
+  // Actual styling
+  font-weight: $font-weight-normal;
+  font-size: 12px;
+  padding: 13px 34px;
+  background-color: $black;
+  color: $white;
+  border: 1px solid $grey;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transition: all 0.25s ease;
+
+  &:focus {
+    color: darken($white, 5%);
+    border-color: $white;
+  }
+
+  @include has-hover {
+    &:not([disabled]):hover {
+      color: darken($white, 5%);
+      border-color: $white;
+    }
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: $cursor-disabled;
+  }
+}
+
+.btn--block {
+  width: 100%;
+}
